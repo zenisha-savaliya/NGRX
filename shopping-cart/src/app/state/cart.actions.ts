@@ -7,7 +7,7 @@ export const CartActions = createActionGroup({
     'Add Product': props<{ product: Product }>(),
     'Remove Product': props<{ productId: string }>(),
     'Update Quantity': props<{ productId: string; quantity: number }>(),
-    'Load Products': emptyProps,
+    'Load Products': emptyProps(),
   },
 });
 

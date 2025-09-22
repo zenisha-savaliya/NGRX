@@ -1,0 +1,10 @@
+<div *ngIf="cart$ | async as cart">
+  <div class="cart-item" *ngFor="let product of cart">
+    <p>{{product.name}}</p><span>{{product.price | currency}}</span>
+    <input type="number" [value]="product.quantity" (input)="onQuantityChange($event, product.id)" />
+    <button (click)="onRemoveFromCart(product.id)" data-test="remove-button">Remove</button>
+  </div>
+  <div class="total">
+    Total: {{cartTotal$ | async | currency}}
+  </div>
+</div>

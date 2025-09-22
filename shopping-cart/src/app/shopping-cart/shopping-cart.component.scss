@@ -1,0 +1,21 @@
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-item p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.cart-item input {
+  width: 50px;
+  text-align: center;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 20px;
+}
